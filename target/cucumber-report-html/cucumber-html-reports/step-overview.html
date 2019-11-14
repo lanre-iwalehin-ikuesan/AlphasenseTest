@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>e2e</td>
+                          <td>1</td>
+                        <td>14 marraskuuta 2019, 19:32</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">Addproduct2CartAndCheckout.i_add_a_random_product_to_cart_and_checkout()</td>
+                <td>1</td>
+                <td class="duration" data-value="364412489">364ms</td>
+                <td class="duration" data-value="364412489">364ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Addproduct2CartAndCheckout.my_order_should_be_confirmed()</td>
+                <td>1</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="duration" data-value="0">000ms</td>
+                <td class="failed">0.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchKeyWord.i_am_logged_in()</td>
+                <td>2</td>
+                <td class="duration" data-value="5042166249">5s 042ms</td>
+                <td class="duration" data-value="2521083124">2s 521ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchKeyWord.i_click_on_magnifying_glass()</td>
+                <td>2</td>
+                <td class="duration" data-value="3842104362">3s 842ms</td>
+                <td class="duration" data-value="1921052181">1s 921ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchKeyWord.i_enter_keyword_in_the_search_field()</td>
+                <td>2</td>
+                <td class="duration" data-value="4003740996">4s 003ms</td>
+                <td class="duration" data-value="2001870498">2s 001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SearchKeyWord.resultMatchingKeywordAndTheQuantityAvailableShouldDisplay()</td>
+                <td>1</td>
+                <td class="duration" data-value="129232757">129ms</td>
+                <td class="duration" data-value="129232757">129ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.i_am_on_the_application_home_page()</td>
+                <td>3</td>
+                <td class="duration" data-value="27892396878">27s 892ms</td>
+                <td class="duration" data-value="9297465626">9s 297ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.i_click_button_to_create_account()</td>
+                <td>1</td>
+                <td class="duration" data-value="3206183471">3s 206ms</td>
+                <td class="duration" data-value="3206183471">3s 206ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.i_click_on_register()</td>
+                <td>1</td>
+                <td class="duration" data-value="2329708190">2s 329ms</td>
+                <td class="duration" data-value="2329708190">2s 329ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.i_click_the_sign_in_link()</td>
+                <td>3</td>
+                <td class="duration" data-value="6417781682">6s 417ms</td>
+                <td class="duration" data-value="2139260560">2s 139ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.i_enter_all_mandatory_details()</td>
+                <td>1</td>
+                <td class="duration" data-value="4988568283">4s 988ms</td>
+                <td class="duration" data-value="4988568283">4s 988ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.i_enter_email_address_for_account_creation()</td>
+                <td>1</td>
+                <td class="duration" data-value="505775984">505ms</td>
+                <td class="duration" data-value="505775984">505ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.my_acoount_should_be_successfully_created()</td>
+                <td>1</td>
+                <td class="duration" data-value="103671974">103ms</td>
+                <td class="duration" data-value="103671974">103ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">createNewMember.setup()</td>
+                <td>3</td>
+                <td class="duration" data-value="11047283291">11s 047ms</td>
+                <td class="duration" data-value="3682427763">3s 682ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>14</td>
+              <td>23</td>
+              <td class="duration">1m 9s 873ms</td>
+              <td class="duration">3s 037ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

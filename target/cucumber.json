@@ -1,0 +1,353 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11047131267,
+              "status": "passed"
+            },
+            "match": {
+              "location": "createNewMember.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "I want to add product to cart and checkout",
+        "description": "",
+        "id": "add-product-to-cart;i-want-to-add-product-to-cart-and-checkout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11133932832,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the application home page",
+            "match": {
+              "location": "createNewMember.i_am_on_the_application_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2901852265,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the sign in link",
+            "match": {
+              "location": "createNewMember.i_click_the_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2832269645,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in",
+            "match": {
+              "location": "SearchKeyWord.i_am_logged_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2131384574,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter keyword in the search field",
+            "match": {
+              "location": "SearchKeyWord.i_enter_keyword_in_the_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2260660346,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on magnifying glass",
+            "match": {
+              "location": "SearchKeyWord.i_click_on_magnifying_glass()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 364412489,
+              "error_message": "org.openqa.selenium.ElementNotVisibleException: element not interactable\n  (Session info: chrome\u003d76.0.3809.132)\n  (Driver info: chromedriver\u003d76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform\u003dWindows NT 6.1.7600 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 23 milliseconds\nBuild info: version: \u00273.0.1\u0027, revision: \u00271969d75\u0027, time: \u00272016-10-18 09:49:13 -0700\u0027\nSystem info: host: \u0027fujitsu-PC\u0027, ip: \u0027192.168.10.60\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u002710.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:58616}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003dignore, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}), userDataDir\u003dC:\\Users\\fujitsu\\AppData\\Local\\Temp\\scoped_dir8996_476706773}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, strictFileInteractability\u003dfalse, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d76.0.3809.132, browserConnectionEnabled\u003dfalse, proxy\u003d{}, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: e8e3ee351c30f2a8da048fef24be603e\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat Pages.Add2CartAndCheckOutPage.ClosePopUp(Add2CartAndCheckOutPage.java:34)\r\n\tat steps.Addproduct2CartAndCheckout.i_add_a_random_product_to_cart_and_checkout(Addproduct2CartAndCheckout.java:14)\r\n\tat ✽.And I add a random product to cart and checkout(Addproduct2CartAndChceckout.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "I add a random product to cart and checkout",
+            "match": {
+              "location": "Addproduct2CartAndCheckout.i_add_a_random_product_to_cart_and_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "my order should be confirmed",
+            "match": {
+              "location": "Addproduct2CartAndCheckout.my_order_should_be_confirmed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add product to cart",
+    "description": "",
+    "id": "add-product-to-cart",
+    "keyword": "Feature",
+    "uri": "Addproduct2CartAndChceckout.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@AddProduct"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 73813,
+              "status": "passed"
+            },
+            "match": {
+              "location": "createNewMember.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "I want to search an item by keyword",
+        "description": "",
+        "id": "search-keyword;i-want-to-search-an-item-by-keyword",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8185669342,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the application home page",
+            "match": {
+              "location": "createNewMember.i_am_on_the_application_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1802017586,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the sign in link",
+            "match": {
+              "location": "createNewMember.i_click_the_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2209896604,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am logged in",
+            "match": {
+              "location": "SearchKeyWord.i_am_logged_in()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1872356422,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter keyword in the search field",
+            "match": {
+              "location": "SearchKeyWord.i_enter_keyword_in_the_search_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1581444016,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on magnifying glass",
+            "match": {
+              "location": "SearchKeyWord.i_click_on_magnifying_glass()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 129232757,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "result matching keyword and the quantity available should display",
+            "match": {
+              "location": "SearchKeyWord.resultMatchingKeywordAndTheQuantityAvailableShouldDisplay()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search keyword",
+    "description": "",
+    "id": "search-keyword",
+    "keyword": "Feature",
+    "uri": "SearchKeyWord.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SearchKeyword"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 78211,
+              "status": "passed"
+            },
+            "match": {
+              "location": "createNewMember.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "I want to create a new user account",
+        "description": "",
+        "id": "create-new-member;i-want-to-create-a-new-user-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8572794704,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the application home page",
+            "match": {
+              "location": "createNewMember.i_am_on_the_application_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1713911831,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click the sign in link",
+            "match": {
+              "location": "createNewMember.i_click_the_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 505775984,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter email address for account creation",
+            "match": {
+              "location": "createNewMember.i_enter_email_address_for_account_creation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3206183471,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click button to create account",
+            "match": {
+              "location": "createNewMember.i_click_button_to_create_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4988568283,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter all mandatory details",
+            "match": {
+              "location": "createNewMember.i_enter_all_mandatory_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2329708190,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on register",
+            "match": {
+              "location": "createNewMember.i_click_on_register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103671974,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "My acoount should be successfully created",
+            "match": {
+              "location": "createNewMember.my_acoount_should_be_successfully_created()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create New Member",
+    "description": "",
+    "id": "create-new-member",
+    "keyword": "Feature",
+    "uri": "createNewMember.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@CreateNewMember"
+      }
+    ]
+  }
+]
